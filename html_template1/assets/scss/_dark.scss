@@ -1,0 +1,209 @@
+/* ------------------------------
+		Dark Mode
+------------------------------ */
+.dark{
+    background-color:$bg-dark;
+    color:$text-color2;
+
+    .categorie:hover,
+    .navbar-toggler span,
+    .load-posts .btn-custom:hover,
+    .btn-custom:hover{
+        background-color: $white-color;
+    }
+
+    .categorie-section .cat-list .item:hover p,
+    .footer .back .back-top i,
+    .search .close i,
+    h1, h2, h3, h4, h5, h6,
+    .navbar .nav-item .nav-link,
+    .navbar .nav-item .dropdown-menu .dropdown-item,
+    .navbar .nav-item:hover .nav-link ,
+    .navbar-right .search-icon i,
+    .hero-carousel .owl-nav .owl-prev:after, 
+    .hero-carousel .owl-nav .owl-next:after,
+    .latest-posts .last-post .content p,
+    .latest-posts .last-post .content a,
+    .categorie-title h3 span,
+    .post-single-body .content .quote p,
+    .post-single-body .content .quote i,
+    .search-form .search-btn,
+    .top-posts .small-post .content a,
+    .related-posts .small-post .content a{
+        color:$white-color;
+    }
+
+    .post-round .content h5 a:hover,
+    a:hover,
+    .navbar .nav-item .nav-link:hover,
+    .navbar .nav-item .nav-link.active,
+    .navbar .nav-item:hover .nav-link,
+    .slider i:hover,
+    .link:hover,
+    .about-us .description .links i{
+        color:$white-color !important;
+    }
+
+    .social-icones li a i,
+    .categorie-section .cat-list .item p,
+    .post-round .content .meta ul li,
+    .hero .post .info li,
+    .post-full .content .info li,
+    .post-list .content .meta ul li,
+    input:checked + .slider .icon-dark,
+    .post-box .content .meta ul li,
+    .latest-posts .last-post .content small,
+    .tags ul li,
+    .categorie-item p,
+    .post-single-header .desc .info li,
+    .post-single-body .content .quote small,
+    .post-single-body .info .tags ul li,
+    .social-media a i,
+    .post-single-body .content .image p,
+    .comments .comment-item .content .info li,
+    .author .content .social-icones a i,
+    .top-posts .small-post .content small,
+    .related-posts .small-post .content small,
+    .load-posts .btn-custom,
+    .contact-info .item .icon i{
+        color:$text-color2;
+    }
+   
+    .navbar .nav-item .dropdown-menu,
+    .navbar-right .search-icon,
+    .post-box,
+    .hero-3,
+    .post-single-header,
+    .form .form-control ,
+    .social-media a,
+    .post-single-body .content .quote i,
+    .contact-info .item .icon,
+    .search-form .search-btn,
+    .search .close ,
+    .footer .back .back-top,
+    .load-posts .btn-custom{
+        background-color: $bg-hover ;
+    }
+    
+    .hero-carousel .owl-nav .owl-prev,
+    .hero-carousel .owl-nav .owl-next,
+    .bg-light,
+    .link:hover{
+        background-color: $bg-hover !important;
+    }
+
+    .navbar-toggler span{
+        box-shadow: 0px -8px 0 0px $white-color, 0px 8px 0 0px $white-color;
+    }
+
+    .categorie:hover,
+    .load-posts .btn-custom:hover,
+    .btn-custom:hover,
+    .search-form .search-btn:hover{
+        color:$dark-color !important;
+        i{
+            color:$dark-color !important; 
+        }
+    }
+
+
+    .navbar,
+    .tags ul li,
+    .search,
+    .search-form input,
+    .loading,
+    .form .form-control:hover{
+        background-color: $bg-dark;
+    }
+   
+  
+    .navbar,
+    .hero-2{
+        border-bottom:1px solid $bg-hover;
+    }
+
+    .post-round,
+    .post-list,
+    .box,
+    .tags ul li, 
+    .form .form-control,
+    .post-single-body .info .tags ul li,
+    .search-form input{
+        border:1px solid $bg-hover;
+    }
+
+    .top-posts .small-post .nb, .related-posts .small-post .nb{
+        border:2px solid $bg-hover;
+    }
+
+    .hero-1{
+        position: relative;
+        .image{
+            &:after{
+                @include after(0px,0px,100%,100%);
+                background-color: $bg-dark;
+                opacity:0.3;
+                border-radius: $rd-circle;
+
+            }
+        }
+    }
+
+    .hero .post h2 a,
+    .hero .post h3 a,
+    .post-round .content h5 a,
+    .post-full .content h3 a,
+    .post-list .content h5 a,
+    .top-posts .small-post .content a, 
+    .related-posts .small-post .content a{
+        background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0) calc(99% - 1px), $white-color 1px);
+    }
+
+
+    .footer .back .back-top:hover,
+    .navbar-right .search-icon:hover,
+    .social-media a:hover,
+    .search-form .search-btn:hover,
+    .search .close:hover{
+        background-color: $base-color;
+        i{
+            color:$dark-color;
+        }
+    }
+
+    .hero-carousel .owl-nav .owl-prev:hover,
+    .hero-carousel .owl-nav .owl-next:hover{
+        background-color: $base-color !important;
+        &:after{
+            color:$dark-color !important;
+        }
+    }
+
+    .dot{
+        background-color: $text-color2;
+    }
+    
+    .categorie-item:hover p,
+    .social-icones li a i:hover,
+    .author .content .social-icones a i:hover{
+           color:$white-color;
+
+    }
+    ::-webkit-input-placeholder {
+        color: $text-color2 !important;
+    }
+
+    :-ms-input-placeholder {
+        color: $text-color2 !important;
+    }
+
+    ::-ms-input-placeholder {
+        color: $text-color2 !important;
+    }
+
+    ::placeholder {
+        color: $text-color2 !important;
+
+    }
+}
+

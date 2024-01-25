@@ -1,0 +1,156 @@
+/* ------------------------------
+		Post-single
+------------------------------ */
+.post{
+	&-single{
+		&-top{
+			position: relative;
+			margin-top:91px;
+			z-index: 1;
+			padding-top:20px;
+		}
+		&-header{
+			padding:50px;
+			border-radius: $rd-round;
+			margin-bottom:50px;
+			background-color: $light-color;
+			.desc{			
+				.categorie{
+					margin-bottom:30px;
+				}
+				h4{
+					margin-bottom:30px;
+					@include easeInOut(0.3);
+					a:hover{
+						color:$base-color;
+					}
+				}
+				p{
+					margin-bottom:30px;
+			
+				}
+				.info{
+					img{
+						width:40px;
+						height: 40px;
+						border-radius: $rd-circle;
+						margin-right:7px;
+					}
+					li{
+						margin-bottom:0;
+						font-size: 13px;
+						color:$text-color;
+						text-transform: capitalize;
+						font-weight: 400;
+						&.dot{
+							background-color: $text-color !important;
+						}
+					}
+				}
+			}
+			.image{
+				img{
+					border-radius: $rd-circle;
+				}
+			}
+		}
+		&-body{
+			.content{
+				h5{
+					margin-top:50px;
+					margin-bottom:10px;
+				}
+			
+				.image-left{
+					max-width: calc(3 * (100vw / 12));
+					border-radius: $rd-circle;
+					float: left;
+	    			margin: 5px 30px 11px 0 !important;
+
+				}
+				.image-right{
+					max-width: calc(3 * (100vw / 12));
+					border-radius: $rd-circle;
+					float: right;
+	    			margin: 5px 0px 11px 30px !important;
+
+				}
+				.image{
+					margin-top:15px;
+					margin-bottom:15px;
+					img{
+						border-radius: $rd-circle;
+					}
+					p{
+						color:$text-color;
+						text-align:center;
+						font-size: 12px;
+						margin-top:4px;
+						margin-bottom:0px;	
+					}
+				}
+				.quote{
+					margin-top:50px;
+					margin-bottom:50px;
+					display: flex;
+					align-items: center;
+					i{
+						font-size: 30px;
+						color:$dark-color;
+						margin-right:30px;
+						border-radius: $rd-circle;
+						background-color: $light-color;
+						width:40px;
+						height: 40px;
+						line-height: 40px;
+						display: block;
+						text-align: center;
+					}
+					p{ 
+						margin-top:10px;
+						margin-bottom:10px;
+						font-size:18px;
+						color:$dark-color;
+						font-weight: 800;
+					}
+					small{
+						color:$text-color;
+						font-weight: 400;
+					}
+					
+				}
+				.list{
+					margin-bottom: 15px;
+					li{
+						position: relative;
+						padding-left: 15px;
+						margin-bottom: 10px;
+						&:before{
+							background-color: $dark-color;
+							border-radius: $rd-circle;
+							@include after(0,12px,5px,5px);
+						}
+					}
+				}
+			}
+			.info{
+				margin-top:50px;
+				margin-bottom:50px;
+				display: flex;
+				align-items: center;
+				.tags{
+					@include tags();
+				}
+				.social-media{
+					text-align: center;
+					margin-left:auto;
+				}
+			}
+		}
+	}
+}
+
+
+
+
+

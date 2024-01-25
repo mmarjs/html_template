@@ -1,0 +1,165 @@
+/* ------------------------------
+		 Hero
+------------------------------ */
+.hero{
+	position: relative;
+	height: calc(100vh - 91px);
+	margin-top:91px;
+	z-index: 1;
+	padding:100px 0px;
+	.image{
+       img{
+		   border-radius: $rd-circle;
+	   }
+	}
+	.post{
+      	.categorie{
+			margin-bottom:30px;
+		}
+		h2,h3{
+			margin-bottom:20px;
+			a{
+				@include text-underline();
+			}
+
+		}
+		p{
+			font-weight: 400;
+			margin-bottom:30px;
+		}
+		.info{
+			ul{
+				display: flex;
+			 	align-items: center; 
+			}
+			img{
+				width:40px;
+				height: 40px;
+				border-radius: $rd-circle;
+				margin-right:10px;
+			}
+			li{
+				margin-bottom:0;
+				font-size: 13px;
+				color:$text-color;
+				text-transform: capitalize;
+				font-weight: 400;
+				a:hover{
+					color:$dark-color;
+				}
+			}
+	 	}
+		
+	}
+	&-1{
+		.inner{
+			width:100%;
+		}
+		.post{
+			position: absolute;
+			z-index: 1;
+			left:0;
+			padding-left:10%;
+			top:50%;
+			width:500px;
+			transform: translateY(-50%);
+			
+		}
+		.image{
+			img{
+				width:450px;
+			}
+		}
+	}
+
+	&-2{
+		border-bottom:1px solid $light-color;
+	}
+	&-3{
+		background-color: $light-color;
+		
+	}
+	&-carousel{
+		.owl-carousel {
+			margin-bottom: 0px;
+			position: relative;
+			border:0px;
+			width:100%;
+		}
+		.owl-nav{
+			text-align: center;
+			line-height: 0;
+			margin-bottom:0px;
+			position: absolute;
+			height: 40px;
+			bottom:0px;
+			right:0;
+			left:auto;
+			margin:auto;
+			width:85px;
+			.owl-prev,
+			.owl-next{
+				background-color:$light-color !important;
+				color:$dark-color !important;
+				margin-right: 0px;
+				border-radius: $rd-circle;
+				width: 40px;
+				height: 40px;
+				line-height: 40px;
+				text-align: center;	
+				font-weight: 400;
+				position: absolute;
+				border:0px !important;
+				@include easeInOut(0.5);
+			
+				&:after{
+					border: 0 none;
+					line-height: normal;
+					vertical-align: middle;
+					font-family: "Font Awesome 5 Free";
+					font-weight: 400;
+					font-size: 14px;
+				}
+				span{
+					display:none;	
+				}
+				&:hover {
+					background-color: $base-color !important;
+					color:$dark-color !important;
+					border:0px  !important;
+
+				}
+			}
+			.owl-prev{
+				left:0;
+				&:after{
+					content: "\f100";	
+				}
+			}
+			.owl-next{
+				right:0;
+				&:after{
+					content: "\f101";
+				}
+			}
+		}
+	}
+	&-carousel-3{
+		.owl-nav{
+			left:0 ;
+			right:0;
+			margin: auto;
+			bottom:-10px;
+			.owl-prev,
+			.owl-next{
+				border:1px solid $text-color !important;
+			}
+		}
+	}
+}
+
+
+
+
+
+

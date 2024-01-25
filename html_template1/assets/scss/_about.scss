@@ -1,0 +1,25 @@
+/* ------------------------------
+		About
+------------------------------ */
+.about-us{
+	.image{
+		img{
+			border-radius: $rd-circle;
+		}	
+	}
+	.description{
+		h5{
+			margin-bottom:15px;
+		}
+		.links{
+			.btn-custom{
+				margin-right:30px;
+			}
+			i{
+				color:$dark-color;
+			}
+		}
+		
+	}
+}
+

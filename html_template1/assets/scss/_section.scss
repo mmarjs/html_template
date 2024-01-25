@@ -1,0 +1,18 @@
+/* ------------------------------
+		 Section
+------------------------------ */
+.section{
+	&-title{
+		margin-bottom:30px;
+		h5{
+			text-transform: capitalize;
+			position: relative;
+			display: inline-block;
+			z-index: 1;
+		}
+		p{
+			margin-bottom:0;
+		}
+	}
+}
+
